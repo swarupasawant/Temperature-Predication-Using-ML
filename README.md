@@ -29,6 +29,7 @@ To Add files to git
 git add .
 OR
 
+
 git add <file_name>
 Note: To ignore file or folder from git we can write name of file/folder in .gitignore file
 
@@ -49,9 +50,13 @@ To check remote url
 git remote -v
 To setup CI/CD pipeline in heroku we need 3 information
 
+
 HEROKU_EMAIL = xyz@gmail.com
+
 HEROKU_API_KEY = <>
+
 HEROKU_APP_NAME = ml-demo-app
+
 BUILD DOCKER IMAGE
 
 docker build -t <image_name>:<tagname> .
