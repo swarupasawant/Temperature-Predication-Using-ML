@@ -1,6 +1,6 @@
 # Temperature-Predication-Using-ML
 
-Temperature prediction using machine learning models - Laao and Ridge,KNN, SVR, Decision Tree and Ensemble Techniques through a comparative analysis using the data during the period 2006 to 2016. The experimental results are evaluated using r2 score, Mean Absolute Error (MAE), Root Mean Square Error (RMSE) and Correlation Coefficients (CC). Random forest regressor model gives 94% accuracy. using This model we create model and deployed on Heroku.
+Temperature prediction using machine learning models - Laao and Ridge,KNN, SVR, Decision Tree and Ensemble Techniques through a comparative analysis using the data during the period 2006 to 2016. The experimental results are evaluated using r2 score, Mean Absolute Error (MAE), Root Mean Square Error (RMSE) and Correlation Coefficients (CC). Random forest regressor model gives 94% accuracy by using this as a base model we create prediction model and deployed on Heroku.
 
 Heroku link - https://temp-prediction-model.herokuapp.com/
 
