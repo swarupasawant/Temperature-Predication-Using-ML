@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+<body style="background-color:rgb(114, 35, 28);">
+
+
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Temprature Prediction</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<div>
+
+</div>
+</head>
+
+<body>
+ <div class="login" style="text-align:center">
+	<h1 style="color:white;"> Temperature Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+      <input type="text" name="Precip Type" placeholder="Precip Type (0 Or 1)" required="required" /><bc>
+    	<input type="text" name="Humidity" placeholder="Humidity(0-1)" required="required" /><br>
+      <br>
+      <input type="text" name="Wind Speed (km/h)" placeholder="Wind Speed(0-63.85)" required="required" /><bc>
+      <input type="text" name="Wind Bearing (degrees)" placeholder="Wind Bearing(0-359.0)" required="required" /><br>
+      <br>
+      <input type="text" name="Visibility (km)" placeholder="Visibility(0-16)" required="required" /><bc>
+      <input type="text" name="Pressure (millibars)" placeholder="Pressure(0-1046.38)" required="required" /><br>
+      <br>
+    	<input type="text" name="Year" placeholder="Year(2006-2016)" required="required" /><bc>
+      <input type="text" name="Month" placeholder="Month(1-12)" required="required" /><br>
+      <br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>    
+    </form>
+
+    <form action="{{ url_for('predict')}}"method="post">
+
+   <br>
+   <br>
+  
+
+<p style="text-align:center;font-size:20px;color:white;"> {{prediction_text}}</p>
+
+</body>
+</body>
+
+</html>
+
